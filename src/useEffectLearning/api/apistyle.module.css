@@ -1,0 +1,81 @@
+.tableContainerWrapper{
+    display: flex;
+    justify-content: center;
+    padding: 1em 0;
+}
+
+.tableTopContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 1em;
+}
+
+.tableTopContainer select{
+    width: 60px;
+    padding: .5em;
+}
+
+.tableTopContainer input{
+    width: 100%;
+    padding: 1em;
+}
+
+.paginationContainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tableWrapper{
+    overflow-x: auto;
+}
+
+.apiTable{
+    width: 100%;
+}
+
+.apiTable,th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.apiTable th{
+    background-color: orange;
+    color: white;
+}
+
+.apiTable thead{
+    background-color: white;
+}
+
+.apiTable tbody{
+    background-color: #f6f6f6;
+}
+
+.apiTable td,th{
+    padding: .5em;
+}
+
+.tableBtnAction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.tableBtnAction button{
+    padding: .5em;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.tableBtnAction .btnUpdate{
+    background-color: green;
+}
+
+.tableBtnAction .btnDelete{
+    background-color: red;
+}

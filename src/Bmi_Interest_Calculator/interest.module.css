@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.interestCalContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.changeCalculator{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    gap:20px;
+}
+
+.changeCalculator .btnActive{
+    background-color: red;
+    color: white;
+    border:1px solid black;
+    padding: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.changeCalculator .btnActive:hover{
+    background-color: rgb(241, 1, 1);
+}
+
+
+.changeCalculator .btnInActive{
+    background-color: white;
+    color: black;
+    border:1px solid black;
+    padding: 1em;
+    width: 100%;
+    cursor: pointer;
+}
+
+.changeCalculator .btnInActive:hover{
+    background-color: rgb(223, 222, 222);
+}
+
+
+.interestCalForm{
+    background-color: white;
+    width: min(95%, 500px);
+    padding: 2em;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.interestHeader{
+    text-align: center;
+    border-top:1px solid black;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+.interestCalForm .row{
+    margin: .5em 0;
+}
+
+.interestCalForm .row label{
+    font-weight: bold;
+}
+
+.interestCalForm .row input,select{
+    width: 100%;
+    padding: 1em;
+}
+
+.interestCalForm .interestCalButton{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.interestCalForm .interestCalButton button{
+    background-color: aliceblue;
+    padding: 1em 1.5em;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.interestCalForm .interestCalButton button:hover{
+    background-color: aqua;
+}
+
+.interestCalForm .interestCalButton p{
+    font-weight: bold;
+}
+
+.interestCalForm .interestCalButton p span{
+    font-size: 2rem;
+    margin-left: 15px;
+}
