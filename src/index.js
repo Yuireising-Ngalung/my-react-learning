@@ -9,6 +9,7 @@ import IndexPageCounter from './useReducer/counter/IndexPageCounter';
 import IndexPageStudent from './useReducer/student/IndexPageStudent';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import BMIInterestCalculator from './BmiInterestCalculator/BMIInterestCalculator';
+import EntryPageUseEffect from './useEffect/EntryPageUseEffect';
 
 
 
@@ -59,6 +60,12 @@ root.render(
             }
          />
 
+
+         <Route 
+            path='/useEffect'
+            element = {<EntryPageUseEffect />}
+         />
+
          <Route 
             path='/calculator'
             element={
@@ -67,6 +74,8 @@ root.render(
          />
       </Routes>
    </BrowserRouter>
+
+   
    
    
 
