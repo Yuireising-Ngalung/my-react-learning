@@ -17,7 +17,7 @@ export default function Login(){
 
     return(<div>
         <div className="formWrapper d-flex justify-content-center align-items-center">
-            <div className="formContainer bg-white p-5 rounded shadow" style={{width: 'min(90%, 500px)'}}>
+            <div className="formContainer bg-white p-md-5 p-3 rounded shadow" style={{width: 'min(90%, 500px)'}}>
                 {
                     success && 
                     <div className="alert alert-success alert-dismissible fade show" role="alert">

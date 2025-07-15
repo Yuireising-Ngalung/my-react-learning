@@ -20,14 +20,15 @@ export default function ChangeColor(){
     }
 
     const handleResetButton = () => {
-        changeColorRef.current.style.backgroundColor = '#f8f9fa';
+        changeColorRef.current.style.backgroundColor = '';
+        changeColorRef.current.style.color = '';
     }
 
     return(<>
-        <div className="container bg-light my-5 p-5 border-top border-5 border-primary rounded-top">
+        <div className="container bg-light my-5 p-md-5 py-4  border-top border-5 border-primary rounded-top">
             <h1>useRef | <span className="text-primary">Change Color</span></h1>
             <hr />
-            <div className="d-flex gap-3 justify-content-center">
+            <div className="d-flex gap-3 justify-content-center flex-wrap">
                 <button 
                     className="btn btn-primary"
                     onClick={handleBlueButton} 

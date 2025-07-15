@@ -7,7 +7,7 @@ export default function IndexPageStudent(){
     const [students, dispatch] = useReducer(studentHandleAction,studentData);
 
     return(<>
-        <div className="container shadow border-top border-5 border-primary rounded-top p-5">
+        <div className="container shadow p-md-5 py-4  border-top border-5 border-primary rounded-top">
             <h1>useReducer | <span className="text-primary">Student Data</span> </h1>
             <hr />
             <button className="btn btn-success" onClick={()=> dispatch({type:'add'})}>Add New Student</button>
