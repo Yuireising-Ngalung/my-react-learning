@@ -1,10 +1,10 @@
 import { Formik, useFormik } from "formik";
-import Registration_Form_UI from "./Registration_Form_UI";
+import RegistrationFormUI from "./RegistrationFormUI";
 import * as Yup from 'yup';
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function Registration_Form(){
+export default function RegistrationForm(){
 
     const [success, setSuccess] = useState(null);
     const [failed, setFailed] = useState(null);
@@ -85,7 +85,7 @@ export default function Registration_Form(){
 
 
     return(<>
-        <Registration_Form_UI 
+        <RegistrationFormUI 
             formik = {formik}
             success = {success}
             failed = {failed}

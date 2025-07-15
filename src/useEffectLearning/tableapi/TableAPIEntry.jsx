@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Table_API_UI from "./Table_API_UI";
+import TableAPIUI from "./TableAPIUI";
 
-export default function Table_API_Entry(){
+export default function TableAPIEntry(){
 
     const [products, setProducts] = useState({});
     const [currentPage, setCurrenPage] = useState(1);
@@ -41,7 +41,7 @@ export default function Table_API_Entry(){
         <h1>Table API Entry</h1>
         <p>{JSON.stringify(products)}</p>
         <div>
-            <Table_API_UI 
+            <TableAPIUI 
                 products = {products}
                 handlePreviousPage = {handlePreviousPage}
                 handleNextPage = {handleNextPage}

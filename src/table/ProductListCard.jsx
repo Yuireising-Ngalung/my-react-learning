@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { Context } from "./context/Context"
 
-export default function Product_List_Card(){
+export default function ProductListCard(){
     const {products} = useContext(Context);
 
     function truncateWords(text, wordLimit){

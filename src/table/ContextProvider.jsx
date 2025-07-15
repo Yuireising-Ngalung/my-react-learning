@@ -2,7 +2,7 @@ import axios from "axios";
 import { Context } from "./context/Context";
 import { useEffect, useState } from "react";
 
-export default function Context_Provider({children}){
+export default function ContextProvider({children}){
 
     const [products, setProducts] = useState(null);
     const [userData,setUserData] = useState(null);

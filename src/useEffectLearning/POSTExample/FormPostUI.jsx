@@ -1,4 +1,4 @@
-export default function Form_Post_UI({handleSubmit, handleOnChange, buttonDisabled}){
+export default function FormPostUI({handleSubmit, handleOnChange, buttonDisabled}){
     return(<div>
         <h1>ReqRes API: Create user</h1>
         <div className="post_API_form_wrapper">

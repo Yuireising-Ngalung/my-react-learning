@@ -1,18 +1,16 @@
 import ReactDOM from 'react-dom/client'
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Alert } from 'bootstrap';
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import './style.css'
-import Login_Form from './assingment/loginForm/Login_Form';
-import Registration_Form from './assingment/registrationForm/Registration_Form'
 import ContextIndex from './assingment/contextLearning/ContextIndex';
-// import IndexPage from './table/IndexPage';
-import FocusInputField from './useRef_Learning/FocusInputField';
-import ChangeColor from './useRef_Learning/ChangeColor';
+import FocusInputField from './useRefLearning/FocusInputField';
+import ChangeColor from './useRefLearning/ChangeColor';
 import IndexPageCounter from './useReducer/counter/IndexPageCounter';
 import IndexPageStudent from './useReducer/student/IndexPageStudent';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import BMI_Interest_Calculator from './Bmi_Interest_Calculator/BMI_Interest_Calculator';
+import BMIInterestCalculator from './BmiInterestCalculator/BMIInterestCalculator';
+
+
 
 
 
@@ -20,18 +18,8 @@ import BMI_Interest_Calculator from './Bmi_Interest_Calculator/BMI_Interest_Calc
 const element = document.getElementById('root');
 const root = ReactDOM.createRoot(element);
 root.render(
-   // <Login_Form />
-
-   // <Registration_Form />
-
-   // <ContextIndex />
-
-   // <IndexPage />
-
-   // <div>
-   //    <FocusInputField />
-   //    <ChangeColor />
-   // </div>
+   
+   
 
    <BrowserRouter>
       <nav className='container-fluid bg-light p-3 d-flex gap-3 shadow mb-5 flex-wrap'>
@@ -74,7 +62,7 @@ root.render(
          <Route 
             path='/calculator'
             element={
-               <BMI_Interest_Calculator />
+               <BMIInterestCalculator />
             }
          />
       </Routes>

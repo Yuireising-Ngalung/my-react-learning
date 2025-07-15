@@ -2,7 +2,7 @@ import style from './style.module.css';
 import { Form, Field, ErrorMessage } from 'formik';
 
 
-export default function Login_Form_Entry_Page_UI({success, failed, setSuccess, setFailed}){
+export default function LoginFormEntryPageUI({success, failed, setSuccess, setFailed}){
     return(<>
         <div className="formsWrapper bg-light px-3 d-flex justify-content-center align-items-center" style={{height:'100vh'}}>
             <div className={`${style.formContainer} rounded bg-white p-5 shadow`}>

@@ -1,6 +1,6 @@
     import { useState, useEffect } from "react";
 
-    export default function Table_API_UI({products, handlePreviousPage, handleNextPage}){
+    export default function TableAPIUI({products, handlePreviousPage, handleNextPage}){
         const {page, per_page, total, total_pages, data} = products
 
 

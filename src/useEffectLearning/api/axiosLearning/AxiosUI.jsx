@@ -1,4 +1,4 @@
-export default function Axios_UI({
+export default function AxiosUI({
     userData,
     currentPage,
     handlePreviousPage,

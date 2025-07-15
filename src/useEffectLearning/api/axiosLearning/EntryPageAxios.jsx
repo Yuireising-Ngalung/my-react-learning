@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Axios_UI from "./Axios_UI";
+import AxiosUI from "./AxiosUI";
 import axios from "axios";
 
 
@@ -62,7 +62,7 @@ export default function EntryPageAxios(){
         <h1>Axios Learning</h1>
 
         <div>
-            <Axios_UI 
+            <AxiosUI 
                 userData = {userData}
                 // handleDelete = {handleDelete}
                 currentPage = {currentPage}

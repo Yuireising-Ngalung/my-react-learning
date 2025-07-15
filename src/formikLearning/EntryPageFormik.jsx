@@ -1,7 +1,7 @@
-import UI_Formik from "./UI_Formik";
+import UIFormik from "./UIFormik";
 import { Formik } from "formik";
 
-export default function Entry_Page_Formik(){
+export default function EntryPageFormik(){
     return(<>
 
         <Formik
@@ -32,7 +32,7 @@ export default function Entry_Page_Formik(){
                 // handleSubmit,
                 isSubmitting
             }) => (
-                <UI_Formik 
+                <UIFormik 
                     // values={values}
                     // errors = {errors}
                     // touched = {touched}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './interest.module.css';
 
-export default function BMI_Interest_Calculator(){
+export default function BMIInterestCalculator(){
 
     const[calType, setCalType] = useState('Interest Calculator');
 

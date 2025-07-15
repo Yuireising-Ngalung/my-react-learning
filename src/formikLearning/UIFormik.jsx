@@ -1,7 +1,7 @@
 import { ErrorMessage, Field, Form } from "formik";
 
 
-export default function UI_Formik({
+export default function UIFormik({
     isSubmitting
 }){
     return(<>

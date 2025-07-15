@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function PropsCallback_button({add, sub, mul, div}){
+function PropsCallbackButton({add, sub, mul, div}){
 
 
     const [userInput, setUserInput] = useState('');
@@ -19,4 +19,4 @@ function PropsCallback_button({add, sub, mul, div}){
     </>)
 }
 
-export default PropsCallback_button;
+export default PropsCallbackButton;

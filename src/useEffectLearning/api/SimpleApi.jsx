@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import style from './apistyle.module.css';
-import SimpleApi_UI from './SimpleApi_UI';
+import SimpleApiUI from './SimpleApiUI';
 
 
 
@@ -91,7 +91,7 @@ import SimpleApi_UI from './SimpleApi_UI';
 
 
         return(<>
-                <SimpleApi_UI
+                <SimpleApiUI
                     products = {products}
                     setPagination = {setPagination}
                     handleUpdateProduct = {handleUpdateProduct}

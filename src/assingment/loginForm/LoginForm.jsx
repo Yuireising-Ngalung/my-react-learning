@@ -1,10 +1,10 @@
 import axios from "axios";
-import Login_Form_Entry_Page_UI from "./Login_Form_Entry_Page_UI";
+import LoginFormEntryPageUI from "./LoginFormEntryPageUI";
 import { Formik, validateYupSchema } from "formik";
 import { useState } from "react";
 import * as Yup from 'yup'
 
-export default function Login_Form(){
+export default function LoginForm(){
 
     const [success, setSuccess] = useState();
     const [failed, setFailed] = useState();
@@ -47,7 +47,7 @@ export default function Login_Form(){
             onSubmit={onSubmit}
             validationSchema={validationSchema}
         >
-            <Login_Form_Entry_Page_UI 
+            <LoginFormEntryPageUI 
                 success = {success}
                 failed = {failed}
                 setSuccess = {setSuccess}

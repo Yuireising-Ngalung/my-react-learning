@@ -1,7 +1,7 @@
 import style from './apistyle.module.css';
 
 
-export default function SimpleApi_UI({
+export default function SimpleApiUI({
     products,
     setPagination,
     handleDeleteProduct,

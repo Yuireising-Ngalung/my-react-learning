@@ -2,9 +2,9 @@
 
 
 import { useState } from "react";
-import PropsCallback_button from "./PropsCallback_button";
+import PropsCallbackButton from "./PropsCallbackButton";
 
-function PropsCallback_index(){
+function PropsCallbackIndex(){
 
 
     const [count, setCount] = useState(0);
@@ -36,7 +36,7 @@ function PropsCallback_index(){
     return(<>
         <h1>Props Callback </h1>
         <h3>Count: {count}</h3>
-        <PropsCallback_button
+        <PropsCallbackButton
             add = {add}
             sub = {sub}
             mul = {mul}
@@ -45,4 +45,4 @@ function PropsCallback_index(){
     </>)  
 }
 
-export default PropsCallback_index;
+export default PropsCallbackIndex;

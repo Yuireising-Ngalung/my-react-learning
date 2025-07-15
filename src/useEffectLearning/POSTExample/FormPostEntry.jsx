@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Form_Post_UI from "./Form_Post_UI";
+import FormPostUI from "./FormPostUI";
 
-export default function Form_Post_Entry(){
+export default function FormPostEntry(){
 
     const [userData, setUserData] = useState({});
     const [buttonDisabled, setButtonDisabled] = useState(true);
@@ -47,7 +47,7 @@ export default function Form_Post_Entry(){
     return(<div>
             <h1>POST API</h1>
             <div>
-                <Form_Post_UI 
+                <FormPostUI 
                     handleSubmit = {handleSubmit}
                     handleOnChange = {handleOnChange}
                     buttonDisabled = {buttonDisabled}

@@ -1,6 +1,6 @@
 import style from './style.module.css'
 
-export default function Registration_Form_UI({formik, success, failed, setSuccess, setFailed}){
+export default function RegistrationFormUI({formik, success, failed, setSuccess, setFailed}){
     return(<>
         <div className="formsWrapper bg-light px-3 d-flex justify-content-center align-items-center" style={{height:'100vh'}}>
             

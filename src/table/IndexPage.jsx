@@ -1,5 +1,5 @@
-import Product_List_Card from "./Product_List_Card";
-import Context_Provider from './Context_Provider';
+import ProductListCard from "./ProductListCard";
+import ContextProvider from './ContextProvider';
 import Login from './components/Login';
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import PrivateRoute from './PrivateRoute';
@@ -7,7 +7,7 @@ import Dashboard from './components/Dashboard';
 
 export default function IndexPage(){
     return(
-        <Context_Provider>
+        <ContextProvider>
             <BrowserRouter>
                 <nav className="bg-light shadow d-flex p-3 gap-3 mb-5 justify-content-between align-items-center">
                     <div className="d-flex gap-3">
@@ -23,7 +23,7 @@ export default function IndexPage(){
                     </div> */}
                 </nav>
                 <Routes>
-                    <Route path="/" element={<Product_List_Card />} />
+                    <Route path="/" element={<ProductListCard />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/dashboard" element={
                         <PrivateRoute>
@@ -32,6 +32,6 @@ export default function IndexPage(){
                     }/>
                 </Routes>
             </BrowserRouter>
-        </Context_Provider>
+        </ContextProvider>
     )
 }
