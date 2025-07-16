@@ -10,8 +10,12 @@ import IndexPageStudent from './useReducer/student/IndexPageStudent';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import BMIInterestCalculator from './BmiInterestCalculator/BMIInterestCalculator';
 import EntryPageUseEffect from './useEffect/EntryPageUseEffect';
+import TodosIndex from './TodosApp/TodosIndex';
 
 
+// import IndexPage from './memo/withMemo/IndexPage';
+// import IndexPage from './memo/withoutMemo/IndexPage';
+import IndexPage from './useCallback/withoutUseCallback/IndexPage';
 
 
 
@@ -29,6 +33,7 @@ root.render(
          <Link to='/useRef' className='btn btn-outline-primary'>useRef</Link>
          <Link to='/useEffect' className='btn btn-outline-primary'>useEffect</Link>
          <Link to='/calculator' className='btn btn-outline-primary'>Calculator</Link>
+         <Link to='/todo' className='btn btn-outline-primary'>Todo App</Link>
       </nav>
       <Routes>
          <Route 
@@ -72,9 +77,18 @@ root.render(
                <BMIInterestCalculator />
             }
          />
+
+         <Route 
+            path='/todo'
+            element={
+               <TodosIndex />
+            }
+         />
       </Routes>
    </BrowserRouter>
+   
+   
+   // <IndexPage />
 
    
-
 )
