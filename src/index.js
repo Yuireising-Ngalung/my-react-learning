@@ -76,9 +76,5 @@ root.render(
    </BrowserRouter>
 
    
-   
-   
 
-   
- 
 )
